@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8">  
+<title>Matthew Pressland</title> 
+<meta name="Description" content="The personal webpage of Matthew Pressland. 
+Contains information about my research and teaching.">  
+<meta name="Keywords" content="Matt Pressland, Matthew Pressland, mdp33
+postgraduate seminar series, mathematical sciences, maths, 
+university of bath, department of mathematics, postgraduate seminar series bath,
+department of mathematical sciences, teaching, MA20216, MA20217, MA10207"> 
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<link rel="icon" type="image/ico" href="favicon.ico"></link>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#left-menu").load("menu.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#header-bath").load("header-bath.html"); 
+    });
+    </script> 
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header-bath">
+</div>
+
+<div id="left-menu">
+</div>
+
+<div id="content">
+
+<h1>MA20217 Algebra 2B (Spring '14)</h1> <hr> 
+
+<h2>Tutorials</h2>
+
+<p class="talk_description">
+
+I give tutorials for Group 1 at 14:15 on Mondays in 8W 2.34, and for Group 10 at 17:15 on Thursdays in CB 3.7. Work should be handed in to my folders in the pigeonholes for the module on the first floor of 4W by 4pm each Tuesday.
+
+<h2>Course Website</h2>
+
+<p class="talk_description">
+The main course webpage for this module can be found <a href="http://people.bath.ac.uk/ac886/teaching/2014/algebra2B/">here</a>.</br></br>
+
+<b>IMPORTANT:</b> The definition of ring is not consistent across all sources. Wikipedia, for example, uses "ring" for what we call "ring with \(1\)" in this course, and "rng" for what we call "ring". Thus if you look up the definition of "ring homomorphism" on Wikipedia, you will get the wrong thing; you want "rng homomorphism".
+</p>
+
+<h2>Week 1</h2>
+ 
+<p class="talk_description">
+There are no tutorials in Week 1.
+</p>
+
+<h2>Week 2</h2>
+ 
+<p class="talk_description">
+I was in Warwick for most of this week, so Thursday's tutorial was covered by Steven Pagett.<br /><br />
+
+There isn't a huge amount to say about Monday, as most of you seemed happy with the basic definitions, which is all you have at this stage. It is worth bearing in mind that as multiplicative inverses need not exist for all elements in a ring, when you are asked to prove an equation of the form \(a^{-1}=b\), you must show that an inverse for \(a\) exists at all, rather than merely that it must be equal to \(b\) if it does. For example, to prove \(1^{-1}=1\), you must show that \(1\) is a two-sided inverse of itself, i.e. that \(1\cdot 1=1=1\cdot1\). If you try to "solve the equation \(1^{-1}\cdot 1=1\) for \(1^{-1}\)", then you are prematurely assuming the existance of an inverse.
+</p>
+
+<h2>Week 3</h2>
+ 
+<p class="talk_description">
+Some excellent questions this week. The reason that closure is not mentioned in the definition of a ring (and needn't be in the definition of a group) is that it is captured in the statement that there are binary relations \(+,\cdot\colon R\times R\to R\). If we want to check \(R'\subset R\) is a subring, the closure condition becomes important; it is easy to restrict the domain of the operations to \(R'\times R'\), but it is not automatic that the image of this restriction lies in \(R'\), so you need to check this.</br></br>
+
+It is also useful to know that \((-a)^n\) is \(a^n\) if \(n\) is even, and \(-a^n\) if \(n\) is odd, even if \(a\) is an element of a ring without unit. The proof of this is built on the identity \((-a)\cdot b=-(a\cdot b)=a\cdot(-b)\), which follows from distributivity. Of course, if the ring does have a unit, the proof is much easier, as \((-a)^n=(-1)^na^n\).
+</p>
+
+<h2>Week 4</h2>
+ 
+<p class="talk_description">
+It doesn't follow immediately from your definition of congruence that if \(a\sim 0\) and \(b\sim0\) then \(a-b\sim 0\). It follows that \(a+b\sim0\), but for the statement you want you first need to show that \(-b\sim 0\). (Hint: \(b+(-b)\sim0+(-b)\)).</br></br>
+
+Always remember to check that sets you want to be subrings/ideals etc. are non-empty. This is usually very easy to do, but shouldn't be ignored.
+</p>
+
+<h2>Week 5</h2>
+ 
+<p class="talk_description">
+Remember to occasionally check that what you are writing down makes sense, to try and detect errors. For example, if you say a field is isomorphic to something which isn't a field, you've made a mistake. Similarly, if you write \(R/I\), and \(I\) is not an ideal of \(R\), something has gone wrong.</br></br>
+
+One topic this week is irreducibility of polynomials in \(\mathbb{K}[x]\) for some field \(\mathbb{K}\). If your polynomial \(f\) has degree \(3\) or less, then any factorization must include some linear factor, which implies that \(f\) has some root in the field \(\mathbb{K}\). Taking the contrapositive, if \(f\) has no roots in \(\mathbb{K}\), then it is irreducible. <b>WARNING:</b> This does <i>not</i> work if the degree of \(f\) is \(4\) or higher. A degree \(4\) polynomial in \(\mathbb{K}[x]\) with no roots in \(\mathbb{K}\) may still factor as a product of two quadratics (see for example \(x^4+2x^2+1\) in \(\mathbb{R}[x]\)).
+</p>
+
+<h2>Week 6</h2>
+ 
+<p class="talk_description">
+Some of you are still a little uncomfortable with ideals. You may want to keep in mind the examples coming from modulo arithmetic, for example \(\mathbb{Z}_6=\mathbb{Z}/6\mathbb{Z}\). Calculations in this ring look like
+\[(2+6\mathbb{Z})(4+6\mathbb{Z})=8+6\mathbb{Z}=2+6\mathbb{Z}\]
+but most of you are comfortable enough to write this as
+\[2\times 4\equiv 8\equiv 2.\]
+The same rules apply when calculation in \(R/I\) for general rings \(R\) and ideals \(I\); you can calculate in \(R\), but you are allowed to treat everything in \(I\) as if it were \(0\), as happened for the multiples of \(6\) in the example. This includes replacing \(r\) by \(s\) if \(r-s\in I\), as in the final step of the example calculation.
+</p>
+
+<h2>Week 7</h2>
+ 
+<p class="talk_description">
+We are now beginning to discuss (associative) \(k\)-algebras over a field \(k\), which have more structure than general rings, and as a result tend to be better behaved. As an example, finding an isomorphism of (sufficiently nice, finite dimensional) \(k\)-algebras can be easier than finding an isomorphism of general rings, as we can use some linear algebra. Let \(A\) and \(B\) be two \(k\)-algebras, that we wish to show are isomorphic. First we need to pick bases \(u_1,\dotsc,u_n\) and \(v_1,\dotsc,v_n\) for \(A\) and \(B\), and define a linear map \(\varphi\colon A\to B\) by \(\varphi(u_i)=v_i\) (and then extending uniquely by linearity). This is automatically an isomorphism of vector spaces, so we just need to check it respects multiplication. By repeated use of the distributive law and linearity, it in fact suffices to check that \(\varphi(u_iu_j)=v_iv_j\) for each pair \((i,j)\). Of course, the challenge is now to find two bases so that this works!
+</p>
+
+<h2>Week 8</h2>
+ 
+<p class="talk_description">
+The focus this week is more calculational, so there is less to say. You can still use basis techniques to your advantage; if you want to prove some identity in an algebra, and each side of your equation is (multilinear) in its arguments, it suffices to verify it for each combination of vectors in some basis of the algbra.
+</p>
+
+<h2>Week 9</h2>
+ 
+<p class="talk_description">
+This week's exercises require you develop some proficiency with minimal polynomials. The key result is that if you have a polynomial \(f\) and operator \(\alpha\) such that \(f(\alpha)=0\), then the minimal polynomial \(m_\alpha\) divides \(f\). If you manage to choose \(f\) cleverly, this can put strong restrictions on the possible values of \(m_\alpha\).</br></br>
+
+We sometimes use \(m_\alpha\) and \(m_A\) interchangably, where \(A\) is the matrix representing \(\alpha\) with respect to some choice of basis. It is sometimes easier to compute \(m_A\), but in many ways the better notation is \(m_\alpha\); while the matrix \(A\) will usually vary if you change the basis, its minimal polynomial will not. Thus, as with determinants, it can be better to think of the minimal polynomial as a property of the underlying map, rather than of a matrix representing it.
+</p>
+
+
+</div>
+
+<div id="footer">
+</div>
+
+</div>
+
+
+</div> 
+</body></html> 

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8">  
+<title>Matthew Pressland</title> 
+<meta name="Description" content="The personal webpage of Matthew Pressland. 
+Contains information about my research and teaching."> 
+<meta name="Keywords" content="Matt Pressland, Matthew Pressland, mdp33
+postgraduate seminar series, mathematical sciences, maths, 
+university of bath, department of mathematics, postgraduate seminar series bath,
+department of mathematical sciences, teaching, MA20216, MA20217, MA10207"> 
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<link rel="icon" type="image/ico" href="favicon.ico"></link>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#left-menu").load("menu.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#header-bath").load("header-bath.html"); 
+    });
+    </script> 
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header-bath">
+</div>
+
+<div id="left-menu">
+</div>
+
+<div id="content">
+
+<h1>MA20216 Algebra 2A (Winter '14)</h1> <hr> 
+
+<h2>Tutorials</h2>
+
+<p class="talk_description">
+
+I give tutorials for Group 3 at 15:15 on Thursdays in 1WN 3.24, and for Group 5 at 17:15 on Thursdays in CB 3.7. Solutions should be handed in to my pigeonhole on 4W Level 1 by 10:15 on Wednesdays.<br /><br />
+
+There will be no tutorials in week 1. There will be a revision tutorial on 8th January, at 15:15 in 1WN 3.24.</p>
+
+<h2>Course Website</h2>
+
+<p class="talk_description">
+The Moodle page for this module can be found <a href="http://moodle.bath.ac.uk/course/view.php?id=52467">here</a>.
+</p>
+
+
+<h2>Week 2</h2>
+ 
+<p class="talk_description">
+You should all aim to remember the 问题 (wèntí) principle&mdash;a problem is a topic you should ask about. Please ask questions via the tutorials, via my <a href="mailto:mdp33@bath.ac.uk">email</a>, or via the discussion forum on <a href="http://moodle.bath.ac.uk/mod/forum/view.php?id=185226">Moodle</a>.</br></br>
+
+This week we mostly concentrated on revision of Algebra 1B, and in particular how to relate linear maps to matrices. If you have a linear map \(\varphi\colon V\to W\) and bases \(v_1,\dotsc,v_n\) and \(w_1,\dotsc,w_k\) of \(V\) and \(W\), then you can find constants \(A_{ij}\) such that \(\varphi(v_j)=\sum_{i=1}^kA_{ij}w_i\). The matrix \(A=(A_{ij})_{1\leq i\leq k,1\leq j\leq n}\) is then the matrix of \(\varphi\) with respect to the (ordered) bases \(v_1,\dotsc,v_n\) and \(w_1,\dotsc,w_k\). Note that the matrix <i>depends on the choices of basis</i>.</br></br>
+
+Computations can then be performed in the following way; given \(v\in V\), write \(v=\sum_{j=1}^n\lambda_jv_j\). In this way, the basis translates \(v\) into the column \((\lambda_1,\dotsc,\lambda_n)^{\mathsf{T}}\in\mathbb{F}^n\), where \(\mathbb{F}\) is the field over which the vector spaces are defined. Multiplying this column by \(A\) on the left produces a new column \((\mu_1,\dotsc,\mu_k)^{\mathsf{T}}\), which can be translated back into the element \(\sum_{i=1}^k\mu_iw_i\) of \(W\)&mdash;this element is \(\varphi(v)\). This explains why you must get different matrices if you use different bases; changing the basis changes the way that vectors are treated as columns of scalars.
+</p>
+
+<h2>Week 3</h2>
+ 
+<p class="talk_description">
+There was some confusion about the "universal vector space" \(\mathbb{F}_I\). Let \(\mathbb{F}\) be a field and \(I\) be a set. Then there exists a vector space \(\mathbb{F}_I\) over \(\mathbb{F}\) and a map of sets \(\alpha\colon I\to\mathbb{F}_I\), such that for any vector space \(V\) over \(\mathbb{F}\) and map \(f\colon I\to V\), there exists a unique linear map \(\widetilde{f}\colon\mathbb{F}_I\to V\) such that \(\widetilde{f}(\alpha(i))=f(i)\) for all \(i\in I\). (In the notation of the course, \(\alpha(i)=e_i\).) This can be summarised in the following picture:
+
+\[\begin{array}{ccc}I&\stackrel{f}{\to}&V\\{\scriptsize{\alpha}}\downarrow&&\uparrow\scriptsize{\exists!\widetilde{f}}&\\\mathbb{F}_I&=&\mathbb{F}_I\end{array}\]
+
+There are various possible constructions of \(\mathbb{F}_I\), but all of them are isomorphic (in a stronger way than usual). While this seems very abstract, in fact you essentially already know it – if \(B\) is a basis of a vector space \(V\), then we can take \(\mathbb{F}_B=V\), with \(\alpha\) being the inclusion of \(B\) into \(V\), since to define a linear map \(f\colon V\to W\), it is only necessary to specify the values of \(f\) on the basis \(B\).<br/><br/>
+
+Alternatively, let \(B\) be any set of vectors in \(V\), and let \(f\colon B\to V\) be the inclusion. Then there is a unique linear map \(\widetilde{f}\colon\mathbb{F}_B\to V\) extending the map \(f\) of sets. You can check that \(B\) is a basis of \(V\) if and only if \(\widetilde{f}\) is an isomorphism. More precisely, \(B\) is linearly independent if and only if \(\widetilde{f}\) is injective, and spans if and only if \(\widetilde{f}\) is surjective.<br/><br/>
+
+The existence of \(\mathbb{F}_I\) is an example of a categorical adjunction. You have been told about the forgetful functor \(F\colon\mathbf{Vect}_{\mathbb{F}}\to\mathbf{Set}\), which takes a vector space \(v\) to its underlying set (also called \(V\)!). The functor \(G\colon\mathbf{Set}\to\mathbf{Vect}_{\mathbb{F}}\) defined by \(I\mapsto\mathbb{F}_I\) provides a way to go back – the two functors aren't mutually inverse, but they have the relationship
+\[\operatorname{Hom}_{\mathbf{Set}}(I,V)=\operatorname{Hom}_{\mathbf{Vect}_{\mathbb{F}}}(\mathbb{F}_I,V)\]
+
+(where "\(=\)" means that there is a particularly special bijection between the two sets). Written differently, this says
+
+\[\operatorname{Hom}_{\mathbf{Set}}(I,F(V))=\operatorname{Hom}_{\mathbf{Vect}_{\mathbb{F}}}(G(I),V)\]
+
+which means that \(F\) and \(G\) form an <a href="http://en.wikipedia.org/wiki/Adjoint_functors">adjoint pair</a>.
+</p>
+
+<h2>Week 4</h2>
+
+<p class="talk_description">
+A common theme to the problems this week is to prove a peculiar looking identity as a consequence of proving some collection of functionals is a basis for the dual of a vector space. The meat of each problem is in choosing this basis carefully (and proving it is a basis!). The trick is to realise that the identity you ultimately want to prove has the form
+
+\[f(v)=\sum_{i=1}^n\lambda_i\alpha_i(v)\]
+
+for some \(\lambda_i\in\mathbb{F}\) and \(\alpha_i\in V^*\). If you can identify the relevant functionals \(\alpha_i\) and show that they are a basis for \(V^*\) (in fact spanning is always sufficient, since you aren't asked to show that the \(\lambda_i\) are unique), then the identity will follow immediately from showing that \(f\) is a linear functional.
+</p>
+
+<h2>Week 5</h2>
+
+<p class="talk_description">
+Most of this week's problems are, at heart, just careful applications of the definitions. You need to be a little careful about dimensionality issues; if you aren't told that a vector space is finite dimensional, you can't pick a finite basis of it, so you should try to argue in a basis-free way. This should make your argument neater as well as increasing its generality. In some cases you can prove an inclusion of two vector spaces in general, and equality when they are finite dimensional. In these cases the argument for equality usually involves dimension counting, and the result may fail for infinite dimensional vector spaces.<br/><br/>
+
+Soon you will see that there is a (natural) inclusion \(V\stackrel{\sim}{\to}V^{**}\), that is an isomorphism when \(V\) is finite dimensional. The lack of symmetry in some of the results on this week's sheet, when allowing infinite dimensional vector spaces, is realted to the failure of this map to be an isomorphism for infinite dimensional \(V\).
+</p>
+
+<h2>Week 6</h2>
+
+<p class="talk_description">
+This week we talked a lot about definitions by universal property, and how to get information out of them. A universal property definition usually comes with a commutative diagram, and it is important to remember which parts of the diagram are fixed (the machine), which parts you can choose (the input), and then what the definition tells you must exist (the output). For example, here's the universal property for \(\mathbb{F}_I\) from above.
+
+\[\require{color}\begin{array}{ccc}I&\color{blue}{\stackrel{f}{\to}}&\color{blue}{V}\\{\scriptsize{\alpha}}\downarrow&&\color{red}{\uparrow\scriptsize{\exists!\widetilde{f}}}&\\\mathbb{F}_I&=&\mathbb{F}_I\end{array}\]
+
+The black parts are fixed; the definition of the free vector space on \(I\) is a vector space \(\mathbb{F}_I\) with a map (of sets) \(\alpha\colon I\to\mathbb{F}_I\). (The second copy of \(\mathbb{F}_I\) only appears in the picture because diagrams with diagonal arrows don't look nice in MathJax!) The blue part of the picture is variable&mdash;you can choose any vector space \(V\) and any map (of sets) \(f\colon I\to V\). Then the definition tells you that there exists a unique red part, i.e. a linear map \(\widetilde{f}\colon\mathbb{F}_I\to V\), that completes the picture. There are two main ways of using this&mdash;one is simply to generate interesting maps by varying the blue part of the picture, and the other, having chosen some blue part, is to see two ways of filling in the red part, which must then be equal by uniqueness.
+
+</p>
+
+<h2>Week 7</h2>
+
+<p class="talk_description">
+This week we mostly spoke about the difference between internal and external direct sums. Recall that if \(U\) and \(W\) are subspaces of \(V\), then we say \(V=U\oplus W\) if \(U\cap W=\{0\}\) and \(U+W=V\); in this case \(V\) is the internal direct sum of \(U\) and \(W\). However, if we take two arbitrary vector spaces \(U\) and \(W\), not necessarily subspaces of a third space, then we can still define their direct sum via a universal property; it is some vector space \(V\) together with maps \(\iota\colon U\to V\) and \(\zeta\colon W\to V\) such that for any vector space \(X\) and maps \(\varphi\colon U\to X\) and \(\psi\colon W\to X\) there exists \(\theta\colon V\to X\) such that \(\theta\circ\iota=\varphi\) and \(\theta\circ\zeta=\psi\) (draw a picture!). If such a \(V\) exists, then it is called the external direct sum of \(U\) and \(W\) (with respect to the maps \(\iota\) and \(\zeta\)).<br/><br/>
+
+These two definitions seem very different, but they are very closely related. Firstly, if \(U,W\) are subspaces of \(V\), then we can take \(\iota\) and \(\zeta\) to be the inclusions. Then \(V\) and these two maps satisfy the universal property of a direct sum if and only if \(U\cap W=\{0\}\) and \(U+W=V\). On the other hand, if \(U,W\) are two arbitrary vector spaces and their direct sum is \(V\) with maps \(\iota\colon U\to V\) and \(\zeta\colon W\to V\), then the images \(\operatorname{im}{\iota}\) and \(\operatorname{im}{\zeta}\) are honest subspaces of \(V\), which are isomorphic to \(U\) and \(W\) respectively, as \(\iota\) and \(\zeta\) are injections. Moreover, \(\operatorname{im}{\iota}\cap\operatorname{im}{\zeta}=\{0\}\) and \(\operatorname{im}{\iota}+\operatorname{im}{\zeta}=V\).
+</p>
+
+<h2>Week 8</h2>
+
+<p class="talk_description">
+There is a little less to say at this point in the course because most of you are fairly happy with the definition of an inner product. You should take care to remember that an inner product is conjugate symmetric in general; this property reduces to symmetry when the inner product is defined on a real vector space. They are also linear in the second variable, but not in general the first – be aware that this is a convention, and some sources may require linearity in the first variable instead. A consequence of this and conjugate symmetry is that an inner product is conjugate linear in the first variable, meaning that
+\[\langle \lambda u_1+\mu u_2,v\rangle=\bar{\lambda}\langle u_1,v\rangle+\bar{\mu}\langle u_2,v\rangle.\]
+</p>
+
+<h2>Week 9</h2>
+
+<p class="talk_description">
+Some intuition that may help for this week's problems is the following. Given an inner product \(\langle-,-\rangle\) on a vector space \(V\), and \(u,v\in V\), you can think of the vector \(\langle u,v\rangle u\) as the 'component of \(v\) in the direction of \(u\)'. In particular (check this!) \(v-\langle u,v\rangle u\) is orthogonal to \(u\).</br></br>
+
+Those of you who are particularly keen may want to think about how the Riesz representation theorem explains that, for \(V\) finite dimensional, a choice of inner product on \(V\) is equivalent to a choice of isomorphism \(V\stackrel{\sim}{\to} V^*\).
+</p>
+
+<h2>Week 10</h2>
+
+<p class="talk_description">
+First, some administration: if you are able to hand in solutions to sheet 10 any time towards the end of next week, I will attempt to mark them and leave them in the pigeonhole before Friday evening. To maximise this possibility, try to hand in any work before midday on Friday.<br/><br/>
+
+You have general results that tell you that for matrices \(A\) satisfying certain properties (such as symmetric, hermitian,...) you can diagonalise \(A\), i.e. find some invertible \(P\) such that \(P^{-1}AP\) is diagonal. Moreover, you can choose \(P\) in such a way that it satisfies certain properties (such as orthogonal, unitary,...). To compute such a \(P\), you should find a basis of eigenvectors of \(A\) in the usual way. These will necessarily be orthogonal, but for \(P\) to be orthogonal/unitary, you should also choose the eigenvector of length \(1\) in each direction. (Note the notational annoyance: the columns of an orthogonal matrix are not only required to be orthogonal, but in fact orthonormal).
+</p>
+
+
+</div>
+
+<div id="footer">
+</div>
+
+</div>
+
+
+</div> 
+</body></html> 

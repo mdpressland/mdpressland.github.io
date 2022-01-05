@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8">  
+<title>Matthew Pressland</title> 
+<meta name="Description" content="The personal webpage of Matthew Pressland. 
+Contains information about my research and teaching."> 
+<meta name="Keywords" content="Matt Pressland, Matthew Pressland, mdp33
+postgraduate seminar series, mathematical sciences, maths, 
+university of bath, department of mathematics, postgraduate seminar series bath,
+department of mathematical sciences, teaching, MA20216, MA20217, MA10207, MA10210"> 
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<link rel="icon" type="image/ico" href="favicon.ico"></link>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#left-menu").load("menu.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#header-bath").load("header-bath.html"); 
+    });
+    </script> 
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header-bath">
+</div>
+
+<div id="left-menu">
+</div>
+
+<div id="content">
+
+<h1>MA20216 Algebra 1B (Spring '13)</h1> <hr> 
+
+<h2>Tutorials</h2>
+
+<p class="talk_description">
+
+I give tutorials for Groups E5 and E6 at 16:15 on Mondays in 1W 2.8A, and for Groups D3 and D4 at 17:15 on Tuesdays in 1WN 3.10. Both groups should hand in work to my folders in the pigeonholes for the module on the first floor of 4W, by 12:00 each Friday.<br /><br />
+
+There will be no tutorials in week 1.</p>
+
+<h2>Course Website</h2>
+
+<p class="talk_description">
+The webpage for this module can be found <a href="http://www.maths.bath.ac.uk/~masadk/ma210/">here</a>.
+</p>
+
+<h2>Week 2</h2>
+ 
+<p class="talk_description">
+This week we mainly talked about the row echelon form of matrices. We observed that if you simply want to solve a system of linear equations, it is not necessary to bring the matrix fully into row echelon form, but moving it in this direction usually makes the system easier to solve.
+</p>
+
+<h2>Week 3</h2>
+
+<p class="talk_description">
+This week some of you ran into difficulties distinguishing between the two notions of a vector in \(\mathbb{R}^2\). We can see such vectors either as arrows from the origin, or as the point at the end of this arrow. When thinking in terms of points, we will often write such a vector as \(v=(v_1,v_2)\). This approach allows us to define subsets of \(\mathbb{R}^2\) in terms of equations. For example, the subset determined by the equation \(3x_1^2+x_2=3\) consists precisely of the vectors \(v=(v_1,v_2)\) satisfying \(3v_1^2+v_2=3\).<br/><br/>
+
+Given two such vectors, say \(v=(v_1,v_2)\) and \(w=(w_1,w_2)\), satisfying the given equation, we can ask if their sum does; as \(v+w=(v_1+w_1,v_2+w_2)\), this means asking whether \(3(v_1+w_1)^2+v_2+w_2\) is equal to \(3\). In this example, the answer will generally be no, meaning that the subset of \(\mathbb{R}^2\) determined by the equation is not a subspace.
+</p>
+
+
+<h2>Week 4</h2>
+<p class="talk_description">
+The main message from this week was that if you want to prove a matrix \(A\) is invertible, your proof should not contain the symbol \(A^{-1}\), as you don't yet know that such a matrix exists. Also remember that if you have some candidate matrix \(M\) for the inverse of \(A\), you must check <i>both</i> that \(MA=I\), and that \(AM=I\).
+</p>
+
+<h2>Week 5</h2>
+<p class="talk_description">
+For more discussion of changes of basis, click <a href="alg1b-spr13files/wk5.pdf">here</a>.
+</p>
+
+<h2>Week 6</h2>
+<p class="talk_description">
+This week we mainly continued the discussion of change of basis. Given some of the answers to the homework, it may have been a good idea to remind you that to prove things about dimension of vector spaces, you have to use bases, as the only definition of dimension you have involves counting basis elements.
+</p>
+
+<h2>Week 7</h2>
+<p class="talk_description">
+I was in Newcastle this week, so tutorials were taken by Amine Chakhchoukh and Teo Floor.
+</p>
+
+<h2>Week 8</h2>
+<p class="talk_description">
+We noted this week that the characterization theorem tells you that any function from matrices over a field to the field itself, satisfying a relatively short list of properties, is in fact the determinant function. It follows that anything you could possibly want to prove about the determinant must be a consequence of these properties, so you can always try to use these rather than the definition in terms of permutations. It's not guaranteed that it won't be quicker to use the definition (or that the only way the result you want follows from the properties is to first derive the formula in the definition), but usually the proof will be simpler if it is only based on this list of defining properties.
+</p>
+
+<h2>Week 9</h2>
+<p class="talk_description">
+The determinants of the matrices in Question 6 on the eighth example sheet are called Vandermonde determinants, and are polynomials in the variables in the matrix. Factors of this polynomial by pretending all but one of the variables are constant and finding roots of the resulting polynomial in the last variable (enough roots can be found by choosing a value of this last variable so that two rows of the matrix are equal). In this way you can compute enough factors to determine the polynomial up to multiplying by a scalar. Computing a single term (for example the term coming from the diagonal) is then enough to know the entire polynomial.<br/><br/>
+
+When \(\mathbb{F}\) is either the real numbers or the complex numbers, the groups \(\mathrm{GL}_n(\mathbb{F})\) and \(\mathrm{SL}_n(\mathbb{F})\) appearing in Question 9 are examples of Lie groups. These groups have many applications, for example in quantum mechanics.
+</p>
+
+
+</div>
+
+<div id="footer">
+</div>
+
+</div>
+
+
+</div> 
+</body></html> 
