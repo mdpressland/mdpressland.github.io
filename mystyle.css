@@ -112,4 +112,6 @@ figure figcaption {
     padding-bottom:8px;
     padding-top:0px;
     margin-top:5px;
+    text-align:justify;
+    text-justify:inter-word;
 }
