@@ -32,12 +32,8 @@ ul{
   margin-bottom: 7px;
 }
 
-li{
+.wide{
   margin: 5px 0;
-}
-
-.tight{
-  margin: 0px 0;
 }
 
 img{
