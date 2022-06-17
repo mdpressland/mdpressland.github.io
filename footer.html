@@ -1,7 +1,2 @@
-<script type="text/javascript">
-$(document).ready(function() {
-   if (window.location.href.indexOf("stuttgart") > -1) {
-      document.getElementById('footer').innerHTML='<a href="https://www.uni-stuttgart.de/en/privacy-notice/index.html">Privacy Notice</a>&emsp;&emsp;&emsp;<a href="https://www.uni-stuttgart.de/en/legal-notice/index.html">Legal Notice</a>';
-   }
-});
-</script>
+{% capture lastModificationDate %}{% last_modified {{ page.path }} %}{% endcapture %}
+Last Modified: {{ lastModificationDate }}
