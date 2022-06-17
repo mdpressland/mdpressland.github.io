@@ -1,2 +1,1 @@
-{% capture lastModificationDate %}{% last_modified {{ page.path }} %}{% endcapture %}
-<p>Last Modified: {{ lastModificationDate }}</p>
+<p>Last Modified: {% last_modified {{ page.path }} %}</p>
