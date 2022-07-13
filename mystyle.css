@@ -7,9 +7,6 @@
     .main_photo{
     	width:30%;
     }
-    #content{
-    	max-width:min(85%,calc(100% - 7rem));
-    }
 }
 
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -19,9 +16,6 @@
     .main_photo{
     	width:40%;
     }
-    #content{
-    	max-width:min(85%,calc(100% - 10rem));
-    }
 }
  
 @media (max-width: 479px) {
@@ -29,10 +23,7 @@
         font-size: 14px;
     }
     .main_photo{
-    	width:40%;
-    }
-    #content{
-    	max-width:min(85%,calc(100% - 7rem));
+    	width:50%;
     }
 }
 
@@ -126,14 +117,31 @@ figure figcaption {
     border-color:rgb(129,190,247);
 }
 
-#header{
+#menu{
     background-color:rgb(129,190,247);
-    text-align:right;
+    text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
     color:white;
-    height:6rem;
     padding:2%;
-    font-size:1.1rem;
+    padding-bottom:0.5%;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+#menu a:link {color:white;}
+#menu a:visited {color:white;}
+#menu a:hover {color:white;}
+#menu a:active {color:white;}
+
+#header{
+    background-color:rgb(129,190,247);
+    text-align:left;
+    font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
+    color:white;
+    padding:2%;
+    padding-bottom:1%;
+    font-size:1.4rem;
+    font-weight:bold;
 } 
 
 #header-bath{
@@ -141,8 +149,10 @@ figure figcaption {
     text-align:right;
     font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
     color:white;
-    height:7.188rem;
     padding:2%;
+    padding-bottom:1%;
+    font-size:1.4rem;
+    font-weight:bold;
 } 
 
 #left-menu{
@@ -160,13 +170,12 @@ figure figcaption {
 #content{
     display:block;
     background-color:white;
-    float:right;
     padding:2%;
     color:black;
     border-top:0rem;
     border-bottom:0rem;
     border-right:0rem;
-    border-left:2%;
+    border-left:0rem;
     border-style:solid;
     border-color:rgb(129,190,247);
 }
