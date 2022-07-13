@@ -164,6 +164,12 @@ figure figcaption {
     .main_photo{
     	width:30%;
     }
+    #header{
+    	font-size:1.4em;
+    }
+    #header-bath{
+    	font-size:1.4em;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 1023px) {
