@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans+JP&family=Noto+Sans+SC&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
-@media (min-width: 1024px) {
-    html {
-        font-size: 16px;
-    }
-    .main_photo{
-    	width:30%;
-    }
-}
-
-@media (min-width: 480px) and (max-width: 1023px) {
-    html {
-        font-size: 15px;
-    }
-    .main_photo{
-    	width:40%;
-    }
-}
- 
-@media (max-width: 479px) {
-    html {
-        font-size: 14px;
-    }
-    .main_photo{
-    	width:50%;
-    }
-}
-
 body{
     text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", Calibri, verdana, "Lucida Sans", sans-serif;
@@ -146,7 +119,7 @@ figure figcaption {
 
 #header-bath{
     background-color:rgb(129,190,247);
-    text-align:right;
+    text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
     color:white;
     padding:2%;
@@ -154,18 +127,6 @@ figure figcaption {
     font-size:1.4rem;
     font-weight:bold;
 } 
-
-#left-menu{
-    display:block;
-    background-color:white;
-    float:left;
-    padding:2%;
-    margin:0rem;
-    text-align:left;
-    font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
-    font-size:0.875rem;
-    color:black;
-}
 
 #content{
     display:block;
@@ -194,4 +155,40 @@ figure figcaption {
     margin-top:0.125rem;
     text-align:justify;
     text-justify:inter-word;
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+    .main_photo{
+    	width:30%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1023px) {
+    html {
+        font-size: 15px;
+    }
+    .main_photo{
+    	width:40%;
+    }
+}
+ 
+@media (max-width: 479px) {
+    html {
+        font-size: 14px;
+    }
+    .main_photo{
+    	width:50%;
+    }
+    #header{
+    	font-size:1.2em;
+    }
+    #header-bath{
+    	font-size:1.2em;
+    }
+    #menu{
+    	font-size:1.1em;
+    }
 }
