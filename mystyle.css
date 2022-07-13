@@ -1,50 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans+JP&family=Noto+Sans+SC&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
+@media (min-width: 624px) {
+    html {
+        font-size: 16px;
+    }
+    .main_photo{
+    	width:30%;
+    }
+}
+ 
+@media (max-width: 623px) {
+    html {
+        font-size: 14px;
+    }
+    .main_photo{
+    	width:50%;
+    }
+}
+
 body{
     text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", Calibri, verdana, "Lucida Sans", sans-serif;
-    font-size:14px;
+    font-size:0.875rem;
     line-height: 1.5;
 }
 
 h1{
-  margin-top: 0px;
-  margin-bottom: 5px;
+  margin-top: 0rem;
+  margin-bottom: 0.313rem;
 }
 
 h2{
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 0.938rem;
+  margin-bottom: 0.625rem;
 }
 
 h3{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 p{
-  margin-top: 2px;
-  margin-bottom: 7px;
+  margin-top: 0.125rem;
+  margin-bottom: 0.438rem;
 }
 
 ul{
-  margin-top: 0px;
-  margin-bottom: 7px;
-  padding-bottom: 0px;
+  margin-top: 0rem;
+  margin-bottom: 0.438rem;
+  padding-bottom: 0rem;
 }
 
 .wide{
-  margin: 5px 0;
+  margin: 0.313rem 0;
 }
 
 img{
     border:0;
 }
 
+.date_range{
+    text-align:left;
+    vertical-align:top;
+    border-style:white-space;
+    min-width:5rem;
+}
+
 .flag{
-    border:1px solid rgb(230,230,230);
-    max-height:15px;
-    max-width:23px;
+    border:0.063rem solid rgb(230,230,230);
+    max-height:0.938rem;
+    max-width:1.438rem;
 }
 
 a{
@@ -54,28 +79,30 @@ a{
 
 
 td{
-    padding-bottom:3px;
+    padding-bottom:0.188rem;
 }
 
 figure {
     display: inline-block;
-    margin: 20px;
+    margin: 1.25rem;
     text-align: center;
     vertical-align: top;
 }
 figure img {
     vertical-align: top;
+    max-height:15.625rem;
+    max-width:100%;
 }
 figure figcaption {
     text-align: center;
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 
 #container{
-    max-width: 1520px;
+    max-width: 95rem;
     margin-left:auto;
     margin-right:auto;
-    padding:0px;
+    padding:0rem;
     border:1%;
     border-style:solid;
     border-color:rgb(129,190,247);
@@ -86,7 +113,7 @@ figure figcaption {
     text-align:right;
     font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
     color:white;
-    height:115px;
+    height:7.188rem;
     padding:2%;
 } 
 
@@ -95,7 +122,7 @@ figure figcaption {
     text-align:right;
     font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
     color:white;
-    height:115px;
+    height:7.188rem;
     padding:2%;
 } 
 
@@ -105,10 +132,10 @@ figure figcaption {
     float:left;
     width:6%;
     padding:2%;
-    margin:0px;
+    margin:0rem;
     text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", Calibri, verdana, "Lucida Sans", sans-serif;
-    font-size:100%;
+    font-size:0.875rem;
     color:black;
 }
 
@@ -119,9 +146,9 @@ figure figcaption {
     float:right;
     padding:2%;
     color:black;
-    border-top:0px;
-    border-bottom:0px;
-    border-right:0px;
+    border-top:0rem;
+    border-bottom:0rem;
+    border-right:0rem;
     border-left:2%;
     border-style:solid;
     border-color:rgb(129,190,247);
@@ -136,9 +163,9 @@ figure figcaption {
 .talk_description{
     padding-left:2%;
     padding-right:0%;
-    margin-bottom:12px;
-    padding-top:0px;
-    margin-top:2px;
+    margin-bottom:0.75rem;
+    padding-top:0rem;
+    margin-top:0.125rem;
     text-align:justify;
     text-justify:inter-word;
 }
