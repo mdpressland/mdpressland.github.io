@@ -50,7 +50,7 @@ department of mathematical sciences, teaching, MA20216, MA20217, MA10207">
 
 <div id="content">
 
-<h1>MA20216 Algebra 2A (Winter '14)</h1> <hr> 
+<h1>MA20216 Algebra 2A (Winter ’14)</h1> <hr> 
 
 <h2>Tutorials</h2>
 
@@ -80,7 +80,7 @@ Computations can then be performed in the following way; given \(v\in V\), write
 <h2>Week 3</h2>
  
 <p class="talk_description">
-There was some confusion about the "universal vector space" \(\mathbb{F}_I\). Let \(\mathbb{F}\) be a field and \(I\) be a set. Then there exists a vector space \(\mathbb{F}_I\) over \(\mathbb{F}\) and a map of sets \(\alpha\colon I\to\mathbb{F}_I\), such that for any vector space \(V\) over \(\mathbb{F}\) and map \(f\colon I\to V\), there exists a unique linear map \(\widetilde{f}\colon\mathbb{F}_I\to V\) such that \(\widetilde{f}(\alpha(i))=f(i)\) for all \(i\in I\). (In the notation of the course, \(\alpha(i)=e_i\).) This can be summarised in the following picture:
+There was some confusion about the “universal vector space” \(\mathbb{F}_I\). Let \(\mathbb{F}\) be a field and \(I\) be a set. Then there exists a vector space \(\mathbb{F}_I\) over \(\mathbb{F}\) and a map of sets \(\alpha\colon I\to\mathbb{F}_I\), such that for any vector space \(V\) over \(\mathbb{F}\) and map \(f\colon I\to V\), there exists a unique linear map \(\widetilde{f}\colon\mathbb{F}_I\to V\) such that \(\widetilde{f}(\alpha(i))=f(i)\) for all \(i\in I\). (In the notation of the course, \(\alpha(i)=e_i\).) This can be summarised in the following picture:
 
 \[\begin{array}{ccc}I&\stackrel{f}{\to}&V\\{\scriptsize{\alpha}}\downarrow&&\uparrow\scriptsize{\exists!\widetilde{f}}&\\\mathbb{F}_I&=&\mathbb{F}_I\end{array}\]
 
@@ -88,10 +88,10 @@ There are various possible constructions of \(\mathbb{F}_I\), but all of them ar
 
 Alternatively, let \(B\) be any set of vectors in \(V\), and let \(f\colon B\to V\) be the inclusion. Then there is a unique linear map \(\widetilde{f}\colon\mathbb{F}_B\to V\) extending the map \(f\) of sets. You can check that \(B\) is a basis of \(V\) if and only if \(\widetilde{f}\) is an isomorphism. More precisely, \(B\) is linearly independent if and only if \(\widetilde{f}\) is injective, and spans if and only if \(\widetilde{f}\) is surjective.<br/><br/>
 
-The existence of \(\mathbb{F}_I\) is an example of a categorical adjunction. You have been told about the forgetful functor \(F\colon\mathbf{Vect}_{\mathbb{F}}\to\mathbf{Set}\), which takes a vector space \(v\) to its underlying set (also called \(V\)!). The functor \(G\colon\mathbf{Set}\to\mathbf{Vect}_{\mathbb{F}}\) defined by \(I\mapsto\mathbb{F}_I\) provides a way to go back – the two functors aren't mutually inverse, but they have the relationship
+The existence of \(\mathbb{F}_I\) is an example of a categorical adjunction. You have been told about the forgetful functor \(F\colon\mathbf{Vect}_{\mathbb{F}}\to\mathbf{Set}\), which takes a vector space \(v\) to its underlying set (also called \(V\)!). The functor \(G\colon\mathbf{Set}\to\mathbf{Vect}_{\mathbb{F}}\) defined by \(I\mapsto\mathbb{F}_I\) provides a way to go back – the two functors aren’t mutually inverse, but they have the relationship
 \[\operatorname{Hom}_{\mathbf{Set}}(I,V)=\operatorname{Hom}_{\mathbf{Vect}_{\mathbb{F}}}(\mathbb{F}_I,V)\]
 
-(where "\(=\)" means that there is a particularly special bijection between the two sets). Written differently, this says
+(where “\(=\)” means that there is a particularly special bijection between the two sets). Written differently, this says
 
 \[\operatorname{Hom}_{\mathbf{Set}}(I,F(V))=\operatorname{Hom}_{\mathbf{Vect}_{\mathbb{F}}}(G(I),V)\]
 
@@ -105,25 +105,25 @@ A common theme to the problems this week is to prove a peculiar looking identity
 
 \[f(v)=\sum_{i=1}^n\lambda_i\alpha_i(v)\]
 
-for some \(\lambda_i\in\mathbb{F}\) and \(\alpha_i\in V^*\). If you can identify the relevant functionals \(\alpha_i\) and show that they are a basis for \(V^*\) (in fact spanning is always sufficient, since you aren't asked to show that the \(\lambda_i\) are unique), then the identity will follow immediately from showing that \(f\) is a linear functional.
+for some \(\lambda_i\in\mathbb{F}\) and \(\alpha_i\in V^*\). If you can identify the relevant functionals \(\alpha_i\) and show that they are a basis for \(V^*\) (in fact spanning is always sufficient, since you aren’t asked to show that the \(\lambda_i\) are unique), then the identity will follow immediately from showing that \(f\) is a linear functional.
 </p>
 
 <h2>Week 5</h2>
 
 <p class="talk_description">
-Most of this week's problems are, at heart, just careful applications of the definitions. You need to be a little careful about dimensionality issues; if you aren't told that a vector space is finite dimensional, you can't pick a finite basis of it, so you should try to argue in a basis-free way. This should make your argument neater as well as increasing its generality. In some cases you can prove an inclusion of two vector spaces in general, and equality when they are finite dimensional. In these cases the argument for equality usually involves dimension counting, and the result may fail for infinite dimensional vector spaces.<br/><br/>
+Most of this week’s problems are, at heart, just careful applications of the definitions. You need to be a little careful about dimensionality issues; if you aren’t told that a vector space is finite dimensional, you can’t pick a finite basis of it, so you should try to argue in a basis-free way. This should make your argument neater as well as increasing its generality. In some cases you can prove an inclusion of two vector spaces in general, and equality when they are finite dimensional. In these cases the argument for equality usually involves dimension counting, and the result may fail for infinite dimensional vector spaces.<br/><br/>
 
-Soon you will see that there is a (natural) inclusion \(V\stackrel{\sim}{\to}V^{**}\), that is an isomorphism when \(V\) is finite dimensional. The lack of symmetry in some of the results on this week's sheet, when allowing infinite dimensional vector spaces, is realted to the failure of this map to be an isomorphism for infinite dimensional \(V\).
+Soon you will see that there is a (natural) inclusion \(V\stackrel{\sim}{\to}V^{**}\), that is an isomorphism when \(V\) is finite dimensional. The lack of symmetry in some of the results on this week’s sheet, when allowing infinite dimensional vector spaces, is realted to the failure of this map to be an isomorphism for infinite dimensional \(V\).
 </p>
 
 <h2>Week 6</h2>
 
 <p class="talk_description">
-This week we talked a lot about definitions by universal property, and how to get information out of them. A universal property definition usually comes with a commutative diagram, and it is important to remember which parts of the diagram are fixed (the machine), which parts you can choose (the input), and then what the definition tells you must exist (the output). For example, here's the universal property for \(\mathbb{F}_I\) from above.
+This week we talked a lot about definitions by universal property, and how to get information out of them. A universal property definition usually comes with a commutative diagram, and it is important to remember which parts of the diagram are fixed (the machine), which parts you can choose (the input), and then what the definition tells you must exist (the output). For example, here’s the universal property for \(\mathbb{F}_I\) from above.
 
 \[\require{color}\begin{array}{ccc}I&\color{blue}{\stackrel{f}{\to}}&\color{blue}{V}\\{\scriptsize{\alpha}}\downarrow&&\color{red}{\uparrow\scriptsize{\exists!\widetilde{f}}}&\\\mathbb{F}_I&=&\mathbb{F}_I\end{array}\]
 
-The black parts are fixed; the definition of the free vector space on \(I\) is a vector space \(\mathbb{F}_I\) with a map (of sets) \(\alpha\colon I\to\mathbb{F}_I\). (The second copy of \(\mathbb{F}_I\) only appears in the picture because diagrams with diagonal arrows don't look nice in MathJax!) The blue part of the picture is variable&mdash;you can choose any vector space \(V\) and any map (of sets) \(f\colon I\to V\). Then the definition tells you that there exists a unique red part, i.e. a linear map \(\widetilde{f}\colon\mathbb{F}_I\to V\), that completes the picture. There are two main ways of using this&mdash;one is simply to generate interesting maps by varying the blue part of the picture, and the other, having chosen some blue part, is to see two ways of filling in the red part, which must then be equal by uniqueness.
+The black parts are fixed; the definition of the free vector space on \(I\) is a vector space \(\mathbb{F}_I\) with a map (of sets) \(\alpha\colon I\to\mathbb{F}_I\). (The second copy of \(\mathbb{F}_I\) only appears in the picture because diagrams with diagonal arrows don’t look nice in MathJax!) The blue part of the picture is variable&mdash;you can choose any vector space \(V\) and any map (of sets) \(f\colon I\to V\). Then the definition tells you that there exists a unique red part, i.e. a linear map \(\widetilde{f}\colon\mathbb{F}_I\to V\), that completes the picture. There are two main ways of using this&mdash;one is simply to generate interesting maps by varying the blue part of the picture, and the other, having chosen some blue part, is to see two ways of filling in the red part, which must then be equal by uniqueness.
 
 </p>
 
@@ -145,7 +145,7 @@ There is a little less to say at this point in the course because most of you ar
 <h2>Week 9</h2>
 
 <p class="talk_description">
-Some intuition that may help for this week's problems is the following. Given an inner product \(\langle-,-\rangle\) on a vector space \(V\), and \(u,v\in V\), you can think of the vector \(\langle u,v\rangle u\) as the 'component of \(v\) in the direction of \(u\)'. In particular (check this!) \(v-\langle u,v\rangle u\) is orthogonal to \(u\).</br></br>
+Some intuition that may help for this week’s problems is the following. Given an inner product \(\langle-,-\rangle\) on a vector space \(V\), and \(u,v\in V\), you can think of the vector \(\langle u,v\rangle u\) as the ‘component of \(v\) in the direction of \(u\)’. In particular (check this!) \(v-\langle u,v\rangle u\) is orthogonal to \(u\).</br></br>
 
 Those of you who are particularly keen may want to think about how the Riesz representation theorem explains that, for \(V\) finite dimensional, a choice of inner product on \(V\) is equivalent to a choice of isomorphism \(V\stackrel{\sim}{\to} V^*\).
 </p>
