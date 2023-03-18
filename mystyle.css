@@ -45,7 +45,13 @@ img{
     text-align:left;
     vertical-align:top;
     border-style:white-space;
-    min-width:5rem;
+    width:10.5rem;
+}
+
+.td-flag{
+    text-align:center;
+    vertical-align:top;
+    width:1.6rem;
 }
 
 .flag{
@@ -196,5 +202,8 @@ figure figcaption {
     }
     #menu{
     	font-size:1.1em;
+    }
+    .date_range{
+        width:5.5rem;
     }
 }
