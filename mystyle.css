@@ -3,7 +3,6 @@
 body{
     text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", Calibri, verdana, "Lucida Sans", sans-serif;
-    font-size:0.875rem;
     line-height: 1.5;
 }
 
@@ -45,7 +44,7 @@ img{
     text-align:left;
     vertical-align:top;
     border-style:white-space;
-    width:10.5rem;
+    width:12rem;
 }
 
 .td-flag{
@@ -87,7 +86,7 @@ figure figcaption {
 }
 
 #container{
-    max-width: 80rem;
+    max-width: 90rem;
     margin-left:auto;
     margin-right:auto;
     padding:0rem;
