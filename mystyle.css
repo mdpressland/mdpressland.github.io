@@ -3,8 +3,8 @@
 body{
     text-align:left;
     font-family:"Noto Sans", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", Calibri, verdana, "Lucida Sans", sans-serif;
+    font-size:0.875rem;
     line-height: 1.5;
-    font-size: 93%;
 }
 
 h1{
