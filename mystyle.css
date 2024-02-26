@@ -52,13 +52,13 @@ img{
     padding-top: 0.25rem;
     text-align: center;
     vertical-align:top;
-    width:1.6rem;
+    width:1.8rem;
 }
 
 .flag{
     border:0.063rem solid rgb(230,230,230);
-    max-height:0.938rem;
-    max-width:1.438rem;
+    max-height:1rem;
+    max-width:1.65rem;
 }
 
 a{
