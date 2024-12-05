@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: "Noto Sans", sans-serif, Verdana, Geneva, Arial, helvetica, serif;
+  text-align: center;
+  font-size: 115%;
+  background-color: #F3F3F3;
+  color: black;
+  line-height: 1.3;
+}
+
+
+
+
+header, footer{
+	margin-top: 0px;
+	border-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #2580C6;
+	color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #c4bd95;
+}
+
+h1, h2 {
+	color: #f2f3f8;
+} 
+
+h4, h5 {
+	text-align: left;
+	color: #134063;
+}
+
+h4 {
+	font-size: 150%;
+	font-variant: small-caps;
+}
+
+h5 {
+	font-size: 120%;
+}
+
+.primary-nav {
+  display: inline-block;
+  font-size: 100%;
+  font-weight: 400;
+  font-variant: small-caps;
+  text-align: left;
+}
+.primary-nav ul {
+	font: bold;
+	margin: 0;
+	padding: 0;
+}
+.primary-nav li {
+  	display: inline-block;
+  	margin: 0 10px;
+}
+.primary-nav li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.primary-nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}	
+
+section {
+	text-align: left;
+	margin-left: 10px;
+	padding-left:15px
+}
+
+img{ 
+	float: right;
+	display: block;
+	position: relative;
+	outline: transparent;
+	width: 100%;
+	}
+
+#musee {
+	margin: 10px 10px;
+	padding: 10px 10px;
+}
+
+.abstract {
+	margin-left: 20px;
+}
+
+section a {
+  color: #1c6095;
+  text-decoration: none;
+}
+section a:hover {
+  color: #959cc4;
+}
+
+li {
+	list-style: none;
+	text-align: left;
+}
+
+tr {
+	text-align: left;
+}
+
+*.name {
+	font-variant: small-caps;
+}
+
+.blank_row
+{
+    height: 10px !important; /* Overwrite any previous rules */
+}
+
+#footer{
+
+	text-align: center;
+	width:100%;
+	height:94px;
+}
+#footer div{
+	
+		position : relative;
+		padding: 0 5px;
+	margin: 0 5px;
+		}
+#footer a{	
+ 
+  display: inline-block;
+  width:120px;
+	position : relative;
+	padding: 0 10px;
+	margin: 0 5px;
+}
+#footer a{  img{
+height:50px;
+}
