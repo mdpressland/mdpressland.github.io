@@ -12,11 +12,6 @@ body{
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
   font-family:"Noto Sans", sans-serif;
 }
-.opentip-container.style-darkTamil .opentip{
-  color: #f8f8f8;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
-  font-family:"Noto Sans Tamil", sans-serif;
-}
 .opentip-container.style-darkArabic .opentip{
   color: #f8f8f8;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
@@ -36,6 +31,12 @@ body{
   color: #f8f8f8;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
   font-family:"Noto Sans JP", sans-serif;
+}
+
+.opentip-container.style-darkTC .opentip{
+  color: #f8f8f8;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  font-family:"Noto Sans Tamil", sans-serif;
 }
 
 h1{
